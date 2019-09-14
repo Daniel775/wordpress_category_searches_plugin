@@ -1,0 +1,71 @@
+#similar-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 300px);
+	grid-gap: 60px;
+}
+.dm-results{
+	width: 300px;
+	box-shadow: 0px 0px 3px gray;
+	height: max-content;
+	margin-bottom: 25px;
+}
+.dm-results a{
+	width: auto;
+	height: auto;
+}
+.dm-thumb{
+	display: flex;
+	flex-direction: column;
+}
+.dm-title{
+	margin-top: 5px;
+	font-size: 1.8em;
+	color: #57585A;
+	font-weight:  bolder;
+	padding-left: 10px;
+	line-height: initial;
+}
+.dm-subtitle{
+	font-size: 1.3em;
+	color: #57585A;
+	font-weight: bold;
+	border-bottom: 1px gray solid;
+	padding-left: 10px;
+}
+.dm-notes{
+	font-size: 1em;
+	color: #57585A;
+	padding-left: 7px;
+	margin-bottom: 15px;
+}
+.dm-tags{
+	display: flex;
+}
+.dm-tags p{
+	color: white;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	padding: 3px 5px 3px 5px;
+}
+#dm-colored-tags{
+	display: flex;
+	flex-direction: row;
+}
+#dm-colored-tags p{
+	color: white;
+	font-weight: bold;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	padding: 3px 5px 3px 5px;
+}
+@media only screen and (max-width: 400px){
+	#dm-posts{
+		padding: 0px;
+	}
+}
+@media only screen and (max-width: 865px){
+	#dm-posts{
+		justify-content: center;
+	}
+}
