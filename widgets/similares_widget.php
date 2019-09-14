@@ -43,11 +43,16 @@
 			echo '<div id="similar-container">';
 
 			if ($query->have_posts()) {
+				$index = 0;
 				while ($query->have_posts()):
+					$index++;
 					$query->the_post();
 					$postID = get_the_ID();
 					if($currentPageID == $postID) {
 						continue;
+					}
+					if($index > 3){
+						break;
 					}
 ?>
 					<div style="margin-right: 10px;" class="dm-results">
