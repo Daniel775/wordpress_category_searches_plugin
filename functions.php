@@ -1,5 +1,5 @@
 <?php
-function behaviorChooser($arg)
+function menuBehaviorChooser($arg)
 {
 	if ($arg == 'fixo'){
 		wp_enqueue_script('comportamento', plugins_url('widgets/js/comportamento.js', __FILE__));

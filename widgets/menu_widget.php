@@ -12,7 +12,7 @@
 			wp_enqueue_style('menu', plugins_url('css/painel.css', __FILE__));
 			wp_enqueue_script('menu-dinamico', plugins_url('js/menu-dinamico.js', __FILE__));
 
-			include(plugin_dir_path(__FILE__) . '../functions.php');
+			include_once(plugin_dir_path(__FILE__) . '../functions.php');
 
 			$states = getStates();
 
@@ -44,7 +44,7 @@
 				$instance['results_url'] = 'resultados';
 			}
 
-			behaviorChooser($instance['barBehavior']);
+			menuBehaviorChooser($instance['barBehavior']);
 ?>
 
 	<div id="menu" >
